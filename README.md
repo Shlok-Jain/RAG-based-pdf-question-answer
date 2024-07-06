@@ -20,6 +20,7 @@ pip install streamlit
 pip install pymupdf
 pip install langchain
 pip install langchain_community
+pip install docarray
 ```
 
 ## Run the code
