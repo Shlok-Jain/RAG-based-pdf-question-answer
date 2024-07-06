@@ -4,6 +4,9 @@ This is a simple RAG model that can take a pdf as input and answer your question
 
 It divides the document into chunks of 1000 words and then uses a vector database to store chunks. WHen it gets the query it first performs a search on the vector database to get the most relevant chunks. Then it uses the Llama3 model to answer the query, using the retrieved chunks and previous conversation history as context (This makes  it a conversational RAG model).
 
+### Image of the interface
+![Image of the interface](https://github.com/Shlok-Jain/RAG-based-pdf-question-answer/image.png?raw=true)
+
 ## Installation
 First install Ollama on your system from [https://ollama.com/](https://ollama.com/).
 Then run the Llama3 model using follwoing command:
