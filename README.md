@@ -4,14 +4,14 @@ This is a simple RAG model that can take a pdf as input and answer your question
 
 It divides the document into chunks of 1000 words and then uses a vector database to store chunks. WHen it gets the query it first performs a search on the vector database to get the most relevant chunks. Then it uses the Llama3 model to answer the query, using the retrieved chunks and previous conversation history as context (This makes  it a conversational RAG model).
 
-# ## Installation
-First install Ollama on your system from (https://ollama.com/)[https://ollama.com/]
-Then runn the Llama3 model using follwoing command:
+## Installation
+First install Ollama on your system from [https://ollama.com/](https://ollama.com/).
+Then run the Llama3 model using follwoing command:
 ```bash
 ollama run llama3
 ```
 
-# ## Install packages
+## Install packages
 ```bash
 pip install streamlit
 pip install pymupdf
@@ -19,7 +19,7 @@ pip install langchain
 pip install langchain_community
 ```
 
-# ## Run the code
+## Run the code
 ```bash
 streamlit run main.py
 ```
